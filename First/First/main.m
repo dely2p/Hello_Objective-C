@@ -16,6 +16,8 @@
 // member method
 -(void)setWheels: (int)w;
 -(void)setSeats: (int)s;
+-(int)wheels;
+-(int)seats;
 -(void)print;
 
 @end
@@ -30,6 +32,13 @@
 -(void)print {
     NSLog(@"wheels : %i, seats : %i", wheels, seats);
 }
+-(int)wheels {
+    return wheels;
+}
+-(int)seats {
+    return seats;
+}
+
 @end
 
 int main(int argc, const char * argv[]) {
@@ -38,7 +47,8 @@ int main(int argc, const char * argv[]) {
         [hello setWheels: 4];
         [hello setSeats: 2];
         
-        [hello print];
+//        [hello print];
+        NSLog(@"wheels : %i, seats : %i", [hello wheels], [hello seats]);
     }
     return 0;
 }

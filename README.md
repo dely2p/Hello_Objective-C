@@ -63,13 +63,26 @@ Let's study Objective-C
 4. Property Option & Dot operator
 	- 프로퍼티명을 바꾸고 싶을 때는 다음과 같이 바꿀 수 있다.
 
-	```Objective-C
-	// @property int wheels;
-	@property (getter=getWheels, setter=wheels:) int wheels;
-	```
+		```Objective-C
+		// @property int wheels;
+		@property (getter=getWheels, setter=wheels:) int wheels;
+		```
+		
 	- `.` 연산자를 사용할 수 있다.
 	
-	```Objective-C
-	// [hello setWheels: 4];
-	hello.setWheels = 4;
-	```
+		```Objective-C
+		// [hello setWheels: 4];
+		hello.setWheels = 4;
+		```
+		
+	- 메소드에서 여러개의 프로퍼티를 받고 싶을 때는 다음과 같이 쓸 수 있다.
+	
+		```Objective-C
+		-(void)setWheels: (int)w Seats: (int)s; // 정의부
+		-(void)setWheels: (int)w Seats: (int)s {  // 구현부
+		    wheels = w;
+		    seats = s;
+		}
+		[hello setWheels:4 Seats:2]; // 사용 시
+		```
+		

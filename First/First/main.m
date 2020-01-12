@@ -13,41 +13,27 @@
     int wheels;
     int seats;
 }
-// member method
--(void)setWheels: (int)w;
--(void)setSeats: (int)s;
--(int)wheels;
--(int)seats;
+@property int wheels;
+@property int seats;
 -(void)print;
 
 @end
 
 @implementation Vehicle
--(void)setWheels: (int)w {
-    wheels = w;
-}
--(void)setSeats: (int)s {
-    seats = s;
-}
+@synthesize wheels;
+@synthesize seats;
+
 -(void)print {
     NSLog(@"wheels : %i, seats : %i", wheels, seats);
 }
--(int)wheels {
-    return wheels;
-}
--(int)seats {
-    return seats;
-}
-
 @end
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Vehicle *hello = [Vehicle new]; // create instance object
-        [hello setWheels: 4];
-        [hello setSeats: 2];
+        hello.wheels = 4;
+        hello.seats = 2;
         
-//        [hello print];
         NSLog(@"wheels : %i, seats : %i", [hello wheels], [hello seats]);
     }
     return 0;

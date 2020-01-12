@@ -124,3 +124,19 @@ Let's study Objective-C
 			i++;
 		}
 		``` 
+
+
+> NSString
+
+1. NSString 초기화 방법
+	- 다음 3가지 방법은 모두 동일한 결과를 보인다. 메모리 동적할당과 동시에 값을 초기화 하게 됨.
+
+	```Objective-C
+	NSString *str = [[NSString alloc]init];
+	str = @"This is NSString";
+	
+	NSString *str2 = [[NSString alloc]initWithString: @"This is NSString2"]; // convenience method
+	
+	NSString *str3 = @"This is NSString2";
+	```
+	

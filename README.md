@@ -86,3 +86,27 @@ Let's study Objective-C
 		[hello setWheels:4 Seats:2]; // 사용 시
 		```
 		
+5. 조건문(if-else, switch)
+	-  조건문은 다른 언어와 동일하다.
+	
+		```Objective-C
+		if(hello.wheels == 4) {
+			NSLog(@"wheels : 4");
+		}else {
+			NSLog(@"no");
+		}
+		```
+    
+		```Objective-C
+		switch (hello.seats) {
+			case 4:
+				NSLog(@"wheels : 4");
+				break;
+			case 2:
+				NSLog(@"wheels : 2");
+				break;
+			default:
+				NSLog(@"no");
+				break;
+		}
+		```

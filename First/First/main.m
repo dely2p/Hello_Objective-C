@@ -33,6 +33,15 @@ int main(int argc, const char * argv[]) {
                 break;
         }
         
+        for(int i=0;i<hello.wheels;i++) {
+            NSLog(@"wheels no %i", i);
+        }
+        int i=0;
+        while(i<hello.seats) {
+            NSLog(@"seats no %i", i);
+            i++;
+        }
+        
         NSLog(@"wheels : %i, seats : %i", [hello wheels], [hello seats]);
     }
     return 0;

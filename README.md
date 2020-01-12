@@ -110,3 +110,17 @@ Let's study Objective-C
 				break;
 		}
 		```
+
+6. 반복문(for, while)
+	- 반복문도 다른 언어와 동일하다.
+	
+		```Objective-C
+		for(int i=0;i<hello.wheels;i++) {
+			NSLog(@"wheels no %i", i);
+		}
+		int i=0;
+		while(i<hello.seats) {
+			NSLog(@"seats no %i", i);
+			i++;
+		}
+		``` 

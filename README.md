@@ -140,3 +140,36 @@ Let's study Objective-C
 	NSString *str3 = @"This is NSString2";
 	```
 	
+2. NSString 클래스 메서드
+	- substringFromIndex: 해당 인덱스부터 끝까지 String을 잘라서 새로 만들고 리턴함.
+
+		```Objective-C
+		NSString *result = [str substringFromIndex:6];
+		NSLog(@"str : %@", result); // s NSString2
+		```
+		
+	- substringToIndex: 앞에서부터 해당 인덱스까지 String 잘라서 새로 만들고 리턴함.
+	
+		```Objective-C	        
+		NSString *result2 = [str substringToIndex:3];
+		NSLog(@"str : %@", result2); // Thi
+		```
+		
+	-  substringWithRange: NSMakeRange(index, length): 해당 범위 만큼 자름
+	
+		```Objective-C
+		NSString *result3 = [[str substringToIndex:11]substringFromIndex:8];
+	        NSLog(@"str : %@", result3); // NSS
+	        
+	        NSString *result4 = [str substringWithRange:NSMakeRange(8, 3)];
+	        NSLog(@"str : %@", result4); // NSS
+		```
+		
+	- upper, lower
+	
+		 ```Objective-C
+		 NSString *result5 = [[str substringWithRange:NSMakeRange(8, 3)] uppercaseString];
+	        NSLog(@"str : %@", result5); // NSS
+	        result5 = [[str substringWithRange:NSMakeRange(8, 3)] lowercaseString];
+	        NSLog(@"str : %@", result5); // nss
+		 ```

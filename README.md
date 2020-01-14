@@ -173,3 +173,14 @@ Let's study Objective-C
 	        result5 = [[str substringWithRange:NSMakeRange(8, 3)] lowercaseString];
 	        NSLog(@"str : %@", result5); // nss
 		 ```
+		
+> NSMutableString
+	- 문자열 자기 자신이 변화되는 String
+	- 문자열을 중간에 삽입하거나, 뒤에 추가 할 수 있다.
+
+	```Objective-C
+	NSMutableString *mstr = [NSMutableString stringWithString: str];
+	[mstr appendString: @" and NSMutableString"];
+	[mstr insertString: @"Mutable " atIndex: 8];
+	NSLog(@"mstr : %@", mstr);
+	```

@@ -159,28 +159,48 @@ Let's study Objective-C
 	
 		```Objective-C
 		NSString *result3 = [[str substringToIndex:11]substringFromIndex:8];
-	        NSLog(@"str : %@", result3); // NSS
+    	NSLog(@"str : %@", result3); // NSS
 	        
-	        NSString *result4 = [str substringWithRange:NSMakeRange(8, 3)];
-	        NSLog(@"str : %@", result4); // NSS
+        NSString *result4 = [str substringWithRange:NSMakeRange(8, 3)];
+        NSLog(@"str : %@", result4); // NSS
 		```
 		
 	- upper, lower
 	
 		 ```Objective-C
 		 NSString *result5 = [[str substringWithRange:NSMakeRange(8, 3)] uppercaseString];
-	        NSLog(@"str : %@", result5); // NSS
-	        result5 = [[str substringWithRange:NSMakeRange(8, 3)] lowercaseString];
-	        NSLog(@"str : %@", result5); // nss
+        NSLog(@"str : %@", result5); // NSS
+        result5 = [[str substringWithRange:NSMakeRange(8, 3)] lowercaseString];
+        NSLog(@"str : %@", result5); // nss
 		 ```
 		
 > NSMutableString
-	- 문자열 자기 자신이 변화되는 String
-	- 문자열을 중간에 삽입하거나, 뒤에 추가 할 수 있다.
+
+- 문자열 자기 자신이 변화되는 String
+- 문자열을 중간에 삽입하거나, 뒤에 추가 할 수 있다.
 
 	```Objective-C
 	NSMutableString *mstr = [NSMutableString stringWithString: str];
 	[mstr appendString: @" and NSMutableString"];
 	[mstr insertString: @"Mutable " atIndex: 8];
 	NSLog(@"mstr : %@", mstr);
+	```
+	
+> NSArray
+
+- 순서가 있는 객체들을 관리
+-  정적인 배열로 NSMutableArray보다 속도가 빠름
+- 끝나는 부분에 nil을 표시해야함.
+
+	```Objective-C
+	NSArray *month = [[NSArray alloc]initWithObjects:@"January", @"February", @"March", @"April", @"June", @"July", @"Auguest", @"September", nil];
+	```
+	
+	```Objective-C
+	for (int i=0;i<[month count];i++){
+		NSLog(@"month : %@", [month objectAtIndex:i]);
+	}
+	for (NSString *strTemp in month){
+		NSLog(@"month : %@", strTemp);
+	}
 	```

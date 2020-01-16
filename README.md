@@ -207,7 +207,7 @@ Let's study Objective-C
 	
 > NSMutableArray
 
-- 추가, 삭제, 삽입이 가능한 Array
+- 추가, 삭제, 수정이 가능한 Array
 
 	```Objective-C
 	NSMutableArray *mmonth = [NSMutableArray arrayWithArray: month];
@@ -218,7 +218,32 @@ Let's study Objective-C
 	    
 	for(NSString *strTemp in mmonth) {
 	    NSLog(@"month : %@", strTemp);
-}
+	}
 	```
 	
->
+> NSDictionary
+
+-  key-value 형식으로 된 자료구조
+-  initWithObjectsAndKeys 메소드를 이용해 key-value를 넣어줌
+-  objectForKey를 이용해 key값으로 value를 출력할 수 있다.
+
+	```Objective-C
+	NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys: @"최강사", @"이름", @"모름", @"나이", nil];
+	NSLog(@"name: %@", [dic objectForKey: @"이름"]);
+	NSLog(@"age: %@", [dic objectForKey: @"나이"]);
+	```
+	
+> NSMutableDictionary
+
+- 추가, 삭제, 수정이 가능한 Dictionary
+
+	```Objective-C
+	NSMutableDictionary *mdic = [NSMutableDictionary dictionaryWithDictionary: dic];
+	[mdic setObject: @"한국" forKey: @"사는곳"];
+	[mdic setObject: @"약간검정" forKey: @"얼굴색"];
+	    
+	NSLog(@"name: %@", [mdic objectForKey: @"이름"]);
+	NSLog(@"age: %@", [mdic objectForKey: @"나이"]);
+	NSLog(@"location: %@", [mdic objectForKey: @"사는곳"]);
+	NSLog(@"face color: %@", [mdic objectForKey: @"얼굴색"]);
+	```

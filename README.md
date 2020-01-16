@@ -204,3 +204,21 @@ Let's study Objective-C
 		NSLog(@"month : %@", strTemp);
 	}
 	```
+	
+> NSMutableArray
+
+- 추가, 삭제, 삽입이 가능한 Array
+
+	```Objective-C
+	NSMutableArray *mmonth = [NSMutableArray arrayWithArray: month];
+        
+	[mmonth addObject: @"October"];
+	[mmonth addObject: @"November"];
+	[mmonth addObject: @"December"];
+	    
+	for(NSString *strTemp in mmonth) {
+	    NSLog(@"month : %@", strTemp);
+}
+	```
+	
+>

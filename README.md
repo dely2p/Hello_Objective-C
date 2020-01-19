@@ -247,3 +247,9 @@ Let's study Objective-C
 	NSLog(@"location: %@", [mdic objectForKey: @"사는곳"]);
 	NSLog(@"face color: %@", [mdic objectForKey: @"얼굴색"]);
 	```
+	
+> Project BookManager (console)
+
+- 도서 관리 프로그램 (책 추가, 검색, 삭제 기능)
+
+	<img src = "./img/bookManager.png">

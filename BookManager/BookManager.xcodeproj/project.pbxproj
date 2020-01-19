@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A3B8FF5023D49A8700F4C883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B8FF4F23D49A8700F4C883 /* main.m */; };
 		A3B8FF5823D49E4700F4C883 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B8FF5723D49E4700F4C883 /* Book.m */; };
+		A3B8FF5B23D4A06700F4C883 /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B8FF5A23D4A06700F4C883 /* BookManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		A3B8FF4F23D49A8700F4C883 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A3B8FF5623D49E4700F4C883 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		A3B8FF5723D49E4700F4C883 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		A3B8FF5923D4A06700F4C883 /* BookManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookManager.h; sourceTree = "<group>"; };
+		A3B8FF5A23D4A06700F4C883 /* BookManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				A3B8FF4F23D49A8700F4C883 /* main.m */,
+				A3B8FF5923D4A06700F4C883 /* BookManager.h */,
+				A3B8FF5A23D4A06700F4C883 /* BookManager.m */,
 				A3B8FF5623D49E4700F4C883 /* Book.h */,
 				A3B8FF5723D49E4700F4C883 /* Book.m */,
 			);
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B8FF5B23D4A06700F4C883 /* BookManager.m in Sources */,
 				A3B8FF5823D49E4700F4C883 /* Book.m in Sources */,
 				A3B8FF5023D49A8700F4C883 /* main.m in Sources */,
 			);

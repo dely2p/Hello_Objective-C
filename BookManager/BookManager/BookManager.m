@@ -22,4 +22,22 @@
     [bookList addObject: bookObject];
 }
 
+-(NSString *)showAllBook {
+    NSMutableString *strTemp = [[NSMutableString alloc]init];
+    for (Book *bookTemp in bookList) {
+        [strTemp appendString: @"\n"];
+        [strTemp appendString: @"Name : "];
+        [strTemp appendString: bookTemp.name];
+        [strTemp appendString: @"\n"];
+        [strTemp appendString: @"Genre : "];
+        [strTemp appendString: bookTemp.genre];
+        [strTemp appendString: @"\n"];
+        [strTemp appendString: @"Author : "];
+        [strTemp appendString: bookTemp.author];
+        [strTemp appendString: @"\n"];
+        [strTemp appendString: @"-----------------------------"];
+    }
+    return strTemp;
+}
+
 @end

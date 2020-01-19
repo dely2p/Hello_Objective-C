@@ -40,4 +40,27 @@
     return strTemp;
 }
 
+-(NSInteger)countBook {
+    return [bookList count];
+}
+
+-(NSString *)findBook: (NSString *)name {
+    NSMutableString *strTemp = [[NSMutableString alloc]init];
+    for (Book *bookTemp in bookList) {
+        if([bookTemp.name isEqualToString: name]) {
+            [strTemp appendString: @"\n"];
+            [strTemp appendString: @"Name : "];
+            [strTemp appendString: bookTemp.name];
+            [strTemp appendString: @"\n"];
+            [strTemp appendString: @"Genre : "];
+            [strTemp appendString: bookTemp.genre];
+            [strTemp appendString: @"\n"];
+            [strTemp appendString: @"Author : "];
+            [strTemp appendString: bookTemp.author];
+            return strTemp;
+        }
+    }
+    return nil;
+}
+
 @end

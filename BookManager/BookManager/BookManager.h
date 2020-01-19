@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)addBook: (Book *)bookObject;
 -(NSString *)showAllBook;
+-(NSInteger)countBook;
+-(NSString *)findBook: (NSString *)name;
 
 @end
 

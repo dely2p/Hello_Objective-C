@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSString *)showAllBook;
 -(NSInteger)countBook;
 -(NSString *)findBook: (NSString *)name;
+-(NSString *)removeBook: (NSString *)name;
 
 @end
 

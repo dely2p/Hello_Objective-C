@@ -14,6 +14,8 @@
 		A32E0E3B23D895F90008824F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32E0E3A23D895F90008824F /* Assets.xcassets */; };
 		A32E0E3E23D895F90008824F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32E0E3C23D895F90008824F /* LaunchScreen.storyboard */; };
 		A32E0E4123D895F90008824F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A32E0E4023D895F90008824F /* main.m */; };
+		A35940B723E1D3E000064D26 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = A35940B423E1D3DF00064D26 /* Book.m */; };
+		A35940B823E1D3E000064D26 /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A35940B523E1D3DF00064D26 /* BookManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		A32E0E3D23D895F90008824F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A32E0E3F23D895F90008824F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32E0E4023D895F90008824F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A35940B123E1D34500064D26 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A35940B323E1D3DF00064D26 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		A35940B423E1D3DF00064D26 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		A35940B523E1D3DF00064D26 /* BookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookManager.m; sourceTree = "<group>"; };
+		A35940B623E1D3E000064D26 /* BookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			children = (
 				A32E0E2D23D895F80008824F /* VisualAddressBook */,
 				A32E0E2C23D895F80008824F /* Products */,
+				A35940B023E1D34500064D26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +73,10 @@
 				A32E0E2F23D895F80008824F /* AppDelegate.m */,
 				A32E0E3123D895F80008824F /* SceneDelegate.h */,
 				A32E0E3223D895F80008824F /* SceneDelegate.m */,
+				A35940B323E1D3DF00064D26 /* Book.h */,
+				A35940B423E1D3DF00064D26 /* Book.m */,
+				A35940B623E1D3E000064D26 /* BookManager.h */,
+				A35940B523E1D3DF00064D26 /* BookManager.m */,
 				A32E0E3423D895F80008824F /* ViewController.h */,
 				A32E0E3523D895F80008824F /* ViewController.m */,
 				A32E0E3723D895F80008824F /* Main.storyboard */,
@@ -74,6 +86,14 @@
 				A32E0E4023D895F90008824F /* main.m */,
 			);
 			path = VisualAddressBook;
+			sourceTree = "<group>";
+		};
+		A35940B023E1D34500064D26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A35940B123E1D34500064D26 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +168,9 @@
 			files = (
 				A32E0E3623D895F80008824F /* ViewController.m in Sources */,
 				A32E0E3023D895F80008824F /* AppDelegate.m in Sources */,
+				A35940B823E1D3E000064D26 /* BookManager.m in Sources */,
 				A32E0E4123D895F90008824F /* main.m in Sources */,
+				A35940B723E1D3E000064D26 /* Book.m in Sources */,
 				A32E0E3323D895F80008824F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +318,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dely.VisualAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

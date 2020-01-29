@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 @class BookManager;
 @interface ViewController : UIViewController {
-    BookManager *myBook
+    BookManager *myBook;
 }
 
+@property (nonatomic, strong) IBOutlet UITextView *resultTextView;
+
+-(IBAction)showAllBookAction: (id)sender;
 
 @end
 

@@ -16,6 +16,7 @@
 
 @implementation ViewController
 @synthesize resultTextView;
+@synthesize nameTextField, genreTextField, authorTextField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,6 +45,15 @@
 //    NSLog(@"%@", [myBook showAllBook]);
     resultTextView.text = [myBook showAllBook];
     [resultTextView setText: [myBook showAllBook]];
+}
+-(IBAction)addBookAction: (id)sender {
+    Book *bookTemp = [[Book alloc]init];
+    bookTemp.name = nameTextField.text;
+    bookTemp.genre = genreTextField.text;
+    bookTemp.author = authorTextField.text;
+    
+    [myBook addBook: bookTemp];
+    resultTextView.text = @"책이 추가되었습니다:)";
 }
 
 @end

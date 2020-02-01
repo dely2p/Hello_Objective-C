@@ -24,11 +24,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4E-X4-DLq">
                                 <rect key="frame" x="107" y="423" width="200" height="50"/>
-                                <color key="backgroundColor" red="0.81516688292292505" green="0.53201586008071899" blue="0.062184294039957344" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.78077764926472648" green="0.96234912221918378" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bqj-RQ-ByD"/>
                                     <constraint firstAttribute="width" constant="200" id="ixQ-g7-zPK"/>
                                 </constraints>
+                                <color key="tintColor" red="0.34690276015228427" green="0.34690276015228427" blue="0.34690276015228427" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="전체보기"/>
                                 <connections>
                                     <action selector="showAllBookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4R-jL-J04"/>
@@ -107,13 +108,35 @@
                                             <constraint firstAttribute="height" constant="35" id="EDb-gz-WiH"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGH-1y-lN8">
-                                        <rect key="frame" x="172" y="191.5" width="30" height="30"/>
-                                        <state key="normal" title="추가"/>
-                                        <connections>
-                                            <action selector="addBookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYh-4n-vf0"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8bv-1s-9Vp">
+                                        <rect key="frame" x="119.5" y="191.5" width="135" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGH-1y-lN8">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                <color key="backgroundColor" red="0.50980392156862742" green="0.62745098039215685" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="o9u-AU-tT3"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="추가"/>
+                                                <connections>
+                                                    <action selector="addBookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYh-4n-vf0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WII-xW-Odt">
+                                                <rect key="frame" x="75" y="0.0" width="60" height="30"/>
+                                                <color key="backgroundColor" red="0.50980392156862742" green="0.62745098039215685" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="1AC-pK-bxn"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="검색"/>
+                                                <connections>
+                                                    <action selector="findBookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XC5-UI-gft"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="2NX-aJ-Knr" secondAttribute="trailing" constant="10" id="GWu-8G-ZwN"/>

@@ -258,6 +258,8 @@ Let's study Objective-C
 
 - 도서 관리 프로그램 (책 추가, 전체 보기)
 
-	<img src = "./img/addressbook1.png" width="50%">
+	<img src = "./img/addressbook1.png" width="30%">
 	
-	<img src = "./img/addressbook2_1.png" width="50%"><img src = "./img/addressbook2_2.png" width="50%"><img src = "./img/addressbook2_3.png" width="50%">
+	<img src = "./img/addressbook2_1.png" width="30%"><img src = "./img/addressbook2_2.png" width="30%"><img src = "./img/addressbook2_3.png" width="30%">
+	
+	<img src = "./img/addressbook3_1.png" width="30%"><img src = "./img/addressbook3_2.png" width="30%"><img src = "./img/addressbook3_3.png" width="30%">

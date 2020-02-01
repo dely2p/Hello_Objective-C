@@ -19,7 +19,8 @@
 
 -(IBAction)showAllBookAction: (id)sender;
 -(IBAction)addBookAction: (id)sender;
--(IBAction)findBookAction:(id)sender;
+-(IBAction)findBookAction: (id)sender;
+-(IBAction)removeBookAction: (id)sender;
 
 @end
 

@@ -277,3 +277,4 @@ Let's study Objective-C
  
 - 디지털 앨범 (오토 애니메이션)
 
+	<img src = "./img/digitalframe.gif" width="30%">

@@ -17,6 +17,7 @@
 @implementation ViewController
 @synthesize resultTextView;
 @synthesize nameTextField, genreTextField, authorTextField;
+@synthesize countLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,6 +40,8 @@
     [myBook addBook: book1];
     [myBook addBook: book2];
     [myBook addBook: book3];
+    
+    countLabel.text = [NSString stringWithFormat: @"%li", [myBook countBook]];
 }
 
 -(IBAction)showAllBookAction: (id)sender {
@@ -54,6 +57,7 @@
     
     [myBook addBook: bookTemp];
     resultTextView.text = @"책이 추가되었습니다:)";
+    countLabel.text = [NSString stringWithFormat: @"%li", [myBook countBook]];
 }
 -(IBAction)findBookAction:(id)sender {
     NSString *strTemp = [myBook findBook: nameTextField.text];
@@ -70,6 +74,7 @@
         [str appendString: strTemp];
         [str appendString: @"책이 삭제되었습니다"];
         resultTextView.text = str;
+        countLabel.text = [NSString stringWithFormat: @"%li", [myBook countBook]];
     }else {
         resultTextView.text = @"삭제 할 책이 없어요";
     }

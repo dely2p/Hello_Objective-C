@@ -271,3 +271,9 @@ Let's study Objective-C
 	- 전체도서 개수 출력
 	
 	<img src = "./img/addressbook4_1.png" width="30%"><img src = "./img/addressbook4_2.png" width="30%"><img src = "./img/addressbook4_3.png" width="30%">
+	
+
+> Project DigitalFrame
+ 
+- 디지털 앨범 (오토 애니메이션)
+

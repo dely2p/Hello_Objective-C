@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-@synthesize imageView;
+@synthesize imageView, toggleButton;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -36,8 +36,16 @@
                            nil];
     imageView.animationImages = cuteImages;
     imageView.animationDuration = 15.0;
-    [imageView startAnimating];
 }
 
+-(IBAction)toggleAction: (id)sender {
+    if([imageView isAnimating]){
+        [imageView stopAnimating];
+        [toggleButton setTitle: @"Start" forState: UIControlStateNormal];
+    }else {
+        [imageView startAnimating];
+        [toggleButton setTitle: @"Stop" forState: UIControlStateNormal];
+    }
+}
 
 @end

@@ -278,3 +278,18 @@ Let's study Objective-C
 - 디지털 앨범 (오토 애니메이션)
 
 	<img src = "./img/digitalframe.gif" width="30%">
+	
+> Project SignUpScreen
+
+- 프로토콜(Protocols)
+	- 자바 interface와 유사한 기능으로 이를 상속받는 클래스에서 기능을 구현함.
+	- 아래와 같은 형식으로 사용할 수 있음
+	
+	```Objective-C
+	@protocol
+	...
+	@optional //구현하지 않아도 됨
+	@required //필수로 구현
+	...
+	@end
+	```

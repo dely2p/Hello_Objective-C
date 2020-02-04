@@ -36,7 +36,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qle-jK-mjG">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s99-bF-HkY">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s99-bF-HkY">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="JmV-qv-A2y"/>
@@ -55,7 +55,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="r3Y-i5-fGp">
                                                 <rect key="frame" x="0.0" y="44" width="354" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6g-1E-8qf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6g-1E-8qf">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="ZLw-3D-999"/>
@@ -74,7 +74,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wTd-yP-EN1">
                                                 <rect key="frame" x="0.0" y="88" width="354" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksa-8P-SaO">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksa-8P-SaO">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="oks-AG-TSU"/>
@@ -93,7 +93,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TzR-zS-gsl">
                                                 <rect key="frame" x="0.0" y="132" width="354" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J45-jv-FaU">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tel." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J45-jv-FaU">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="vlX-Y8-dA1"/>
@@ -112,7 +112,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="agx-YA-epE">
                                                 <rect key="frame" x="0.0" y="176" width="354" height="34"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnl-ka-emi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnl-ka-emi">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="GzG-s5-W3y"/>
@@ -136,7 +136,6 @@
                                             <constraint firstItem="qle-jK-mjG" firstAttribute="leading" secondItem="p2y-I1-8ZA" secondAttribute="leading" id="C0Q-Yk-PEd"/>
                                             <constraint firstItem="qle-jK-mjG" firstAttribute="top" secondItem="p2y-I1-8ZA" secondAttribute="top" id="CcQ-IG-LjP"/>
                                             <constraint firstAttribute="trailing" secondItem="r3Y-i5-fGp" secondAttribute="trailing" id="J2m-Me-MeI"/>
-                                            <constraint firstAttribute="bottom" secondItem="qle-jK-mjG" secondAttribute="bottom" id="JwQ-3L-NJO"/>
                                             <constraint firstAttribute="trailing" secondItem="wTd-yP-EN1" secondAttribute="trailing" id="OyB-Vz-7hY"/>
                                             <constraint firstAttribute="trailing" secondItem="qle-jK-mjG" secondAttribute="trailing" id="R06-64-gDZ"/>
                                             <constraint firstItem="r3Y-i5-fGp" firstAttribute="leading" secondItem="p2y-I1-8ZA" secondAttribute="leading" id="Wf3-tp-wwv"/>
@@ -151,7 +150,12 @@
                                             <constraint firstAttribute="width" constant="150" id="I0p-cK-pWD"/>
                                             <constraint firstAttribute="height" constant="40" id="T04-cb-6vv"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.27617385786802029" green="0.22044958066417614" blue="0.0020649549457394645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLQ-d5-frQ"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-s0-Y05">
                                         <rect key="frame" x="0.0" y="450" width="354" height="168"/>
@@ -182,6 +186,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blogTextField" destination="M6e-i1-Npu" id="8ln-Le-29J"/>
+                        <outlet property="idTextField" destination="hcM-UQ-VLs" id="kVf-GN-j7Z"/>
+                        <outlet property="nameTextField" destination="6hI-eC-hq6" id="w6V-Qt-cRp"/>
+                        <outlet property="passwordTextField" destination="Med-t5-cMO" id="7eK-L9-Ayh"/>
+                        <outlet property="resultTextView" destination="Izp-s0-Y05" id="i4k-nv-GFI"/>
+                        <outlet property="telTextField" destination="t2r-hR-IGw" id="FAI-IF-gUN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

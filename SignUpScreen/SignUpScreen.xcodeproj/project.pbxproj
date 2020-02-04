@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC145EEC23E965DE00E61DE7 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		AC454E5723E9513D004F9666 /* SignUpScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC454E5A23E9513D004F9666 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC454E5B23E9513D004F9666 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 				AC454E6823E9513F004F9666 /* LaunchScreen.storyboard */,
 				AC454E6B23E9513F004F9666 /* Info.plist */,
 				AC454E6C23E9513F004F9666 /* main.m */,
+				AC145EEC23E965DE00E61DE7 /* Header.h */,
 			);
 			path = SignUpScreen;
 			sourceTree = "<group>";

@@ -296,3 +296,6 @@ Let's study Objective-C
 	
 - 딜리게이트(delegate)
 	- 특정한 기능이 실행될 때 delegate method가 호출되게 됨
+	- placeholder, password secure text, number keypad, blog keypad 설정
+
+	<img src = "./img/signUpScreen1_1.png" width="30%"><img src = "./img/signUpScreen1_2.png" width="30%">

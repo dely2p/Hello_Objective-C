@@ -22,6 +22,10 @@
     resultTextView.text = [NSString stringWithFormat: @"%@ 님 가입을 축하드립니다.", nameTextField.text];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing: YES];
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     NSLog(@"textFieldShouldReturn");
 //    [nameTextField resignFirstResponder]; //UIResponder

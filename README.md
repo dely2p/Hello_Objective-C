@@ -293,3 +293,6 @@ Let's study Objective-C
 	...
 	@end
 	```
+	
+- 딜리게이트(delegate)
+	- 특정한 기능이 실행될 때 delegate method가 호출되게 됨

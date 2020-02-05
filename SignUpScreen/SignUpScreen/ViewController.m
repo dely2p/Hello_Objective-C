@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <Header.h>
 @interface ViewController ()
 
 @end
@@ -16,10 +15,19 @@
 @synthesize nameTextField, idTextField, passwordTextField, telTextField, blogTextField, resultTextView;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    nameTextField.delegate = self;
+//    idTextField.delegate = self;
 }
 - (IBAction)signUpAction: (id)sender {
     resultTextView.text = [NSString stringWithFormat: @"%@ 님 가입을 축하드립니다.", nameTextField.text];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"textFieldShouldReturn");
+//    [nameTextField resignFirstResponder]; //UIResponder
+//    [idTextField resignFirstResponder];
+    [textField resignFirstResponder];
+    return YES;;
 }
 
 @end

@@ -301,3 +301,78 @@ Let's study Objective-C
 	<img src = "./img/signUpScreen1_1.png" width="30%"><img src = "./img/signUpScreen1_2.png" width="30%">
 	
 	- Responder Chain : 하위의 View에서 처리가 되지 않은 이벤트를 상위 View에서 차례대로 올라가면서 넘어가게 됨.(누군가가 처리하면 이벤트가 날아가게 됨) - 이벤트 버블링(웹)
+
+	
+> Project AppLifeCycle
+
+- 앱이 실행될 때 어떻게 처리되는지 과정 알아보기(AppDelegate)
+
+	<img src = "./img/appLauchSequence.png" width="80%">
+	
+	- 앱이 처음 실행 시 단 한번만 호출되는 메소드
+	
+		```Objective-C
+		- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+		    // Override point for customization after application launch.
+		    NSLog(@"didFinishLaunchingWithOptions");
+		    return YES;
+		}
+		```
+	
+	- 앱이 백그라운드에서 포그라운드로 올라올 때 호출되는 메소드
+	
+		```Objective-C
+		- (void)applicationDidBecomeActive:(UIApplication *)application {
+		    NSLog(@"didFinishLaunchingWithOptions");
+		}
+		```
+	
+	- 문자나 전화가 올 때 기존 앱이 활성화에서 비활성화가 될 때 호출되는 메소드
+	
+		```Objective-C
+		- (void)applicationWillResignActive:(UIApplication *)application {
+		    NSLog(@"applicationWillResignActive")
+		}
+		```
+	
+	- 앱은 백그라운드가 되어 앱이 정지 될 때 호출되는 메소드로 리소스들을 저장하고, 타임아웃 리셋되도록 할 때 사용됨
+	
+		```Objective-C
+		- (void)applicationDidEnterBackground:(UIApplication *)application {
+		    NSLog(@"applicationDidEnterBackground");
+		}
+		```
+		
+	- 백그라운드에서 포그라운드로 넘어오면서 호출되는 메소드로 저장했던 데이터를 불러오게 됨
+
+		```Objective-C
+		- (void)applicationWillEnterForeground:(UIApplication *)application {
+		    NSLog(@"applicationDidEnterBackground");
+		}
+		```
+		
+	- 앱이 종료될 때 호출되는 메소드이나 주로 `applicationDidEnterBackground `에서 처리해 줌
+
+		```Objective-C
+		- (void)applicationWillTerminate:(UIApplication *)application {
+		    NSLog(@"applicationWillTerminate");
+		}
+		```
+
+- View
+
+	- `viewDidLoad()` : Controller의 View가 메모리에 로드되고 난 후 호출됨
+	- `loadView()` 
+		- 컨트롤러가 관리할 View를 만듦.(nip 파일을 사용할 때 정적인 UI만 만들 수 있는데, 동적인 UI를 만들고자 할 때 사용됨)
+		- 그러나 직접 호출을 하면 안되며, 이 메소드를 오버라이딩 하면 자동으로 스토리보드를 부르지 않게 됨.
+		- 수동으로 view를 만들 때 사용함.
+		- `super`를 사용하게 되면 스토리보드를 사용하게 됨. 따라서 super를 쓰면 안됨.
+
+- Responding to View Events
+	- viewDidLoad() : view가 뜰 때 한 번 호출됨.
+	- viewWillAppear() : view가 비활성화에서 활성화가 될 때 화면이 보이기 전에 호출됨.
+	- viewDidAppear() : view가 비활성화에서 활성화가 될 때 화면이 보이고 나서 호출됨.
+	- viewWillDisappear() : view가 활성화에서 비활성화가 될 때 화면이 없어지기 전에 호출됨.
+	- viewDidDisappear() : view가 활성화에서 비활성화가 될 때 화면이 없어진 후에 호출됨.
+		
+		<img src = "./img/appLifeCycle.gif" width="80%">

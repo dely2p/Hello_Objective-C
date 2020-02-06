@@ -299,3 +299,5 @@ Let's study Objective-C
 	- placeholder, password secure text, number keypad, blog keypad 설정
 
 	<img src = "./img/signUpScreen1_1.png" width="30%"><img src = "./img/signUpScreen1_2.png" width="30%">
+	
+	- Responder Chain : 하위의 View에서 처리가 되지 않은 이벤트를 상위 View에서 차례대로 올라가면서 넘어가게 됨.(누군가가 처리하면 이벤트가 날아가게 됨) - 이벤트 버블링(웹)

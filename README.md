@@ -383,3 +383,9 @@ Let's study Objective-C
 - WebKit 사용하여 웹브라우저 띄우기 (goback(), goForward(), stopLoading(), reload() 사용)
 
 	<img src = "./img/miniBrowser.gif" width="30%">
+	
+> Project FlightBooking
+
+- Switch, DatePicker를 사용하여 날짜 데이터 출력
+ 
+	<img src = "./img/flightBooking.gif" width="30%">

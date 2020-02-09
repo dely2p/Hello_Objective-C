@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate> {
+    long buttonTag;
+}
 @property (weak, nonatomic) IBOutlet UIButton *departureDateButton;
 @property (weak, nonatomic) IBOutlet UILabel *returnDateLabel;
 @property (weak, nonatomic) IBOutlet UIButton *returnDateButton;

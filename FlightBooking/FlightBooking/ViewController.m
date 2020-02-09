@@ -16,6 +16,7 @@
 @synthesize returnDateLabel, returnDateButton, selectDatePicker, departureDateButton;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    buttonTag = 0;
     returnDateLabel.hidden = YES;
     returnDateButton.hidden = YES;
     selectDatePicker.hidden = YES;
@@ -26,18 +27,19 @@
     selectDatePicker.hidden = YES;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 - (IBAction)showReturnDateAction:(id)sender {
-    if(returnDateButton.hidden == YES) {
-        returnDateLabel.hidden = NO;
-        returnDateButton.hidden = NO;
-    }else {
-        returnDateLabel.hidden = YES;
-        returnDateButton.hidden = YES;
-    }
+    returnDateLabel.hidden = ![sender isOn];
+    returnDateButton.hidden = ![sender isOn];
 }
 
 - (IBAction)showDatePickerAction:(id)sender {
     selectDatePicker.hidden = NO;
+    buttonTag = [sender tag];
 }
 
 - (IBAction)selectDateAction:(id)sender {
@@ -47,6 +49,10 @@
     
     NSString *dateString = [formatter stringFromDate: [selectDatePicker date]];
     NSLog(@"%@", dateString);
-    [departureDateButton setTitle: dateString forState: UIControlStateNormal];
+    if(buttonTag == 0) {
+        [departureDateButton setTitle: dateString forState: UIControlStateNormal];
+    }else {
+        [returnDateButton setTitle: dateString forState: UIControlStateNormal];
+    }
 }
 @end

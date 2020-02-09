@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-tr-2Yy">
-                                <rect key="frame" x="30" y="74" width="354" height="758"/>
+                                <rect key="frame" x="30" y="74" width="354" height="595"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight Booking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieL-P8-8jv">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
@@ -74,6 +74,9 @@
                                                 <state key="normal" title="Select Date">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="showDatePickerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EID-aO-bDx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -81,10 +84,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G8i-FB-d9H">
-                                        <rect key="frame" x="0.0" y="210" width="354" height="50"/>
+                                        <rect key="frame" x="0.0" y="210" width="354" height="35"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round Trip :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inX-ye-zrI">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="tc3-cn-9Zk"/>
                                                 </constraints>
@@ -93,24 +96,26 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aD-KT-kBo">
-                                                <rect key="frame" x="170" y="0.0" width="47.5" height="50"/>
+                                                <rect key="frame" x="170" y="0.0" width="47.5" height="35"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tuD-l2-qc0">
-                                                <rect key="frame" x="237.5" y="0.0" width="51" height="50"/>
+                                                <rect key="frame" x="237.5" y="0.0" width="51" height="35"/>
+                                                <connections>
+                                                    <action selector="showReturnDateAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="218-6P-ijN"/>
+                                                </connections>
                                             </switch>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OtN-qZ-1mW">
-                                                <rect key="frame" x="306.5" y="0.0" width="47.5" height="50"/>
+                                                <rect key="frame" x="306.5" y="0.0" width="47.5" height="35"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="oY2-pq-vBM"/>
-                                            <constraint firstItem="tuD-l2-qc0" firstAttribute="centerY" secondItem="G8i-FB-d9H" secondAttribute="centerY" id="vSO-Oi-oGB"/>
+                                            <constraint firstAttribute="height" constant="35" id="oY2-pq-vBM"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="A4J-Yi-klT">
-                                        <rect key="frame" x="0.0" y="280" width="354" height="50"/>
+                                        <rect key="frame" x="0.0" y="265" width="354" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4L-qp-KEM">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
@@ -134,7 +139,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3N-oc-igv">
-                                        <rect key="frame" x="0.0" y="350" width="354" height="40"/>
+                                        <rect key="frame" x="0.0" y="335" width="354" height="40"/>
                                         <color key="backgroundColor" red="0.81516688289999994" green="0.53201586010000002" blue="0.062184294039999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fX0-kr-hK5"/>
@@ -144,7 +149,13 @@
                                         </state>
                                     </button>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JN2-Z8-zdx">
-                                        <rect key="frame" x="0.0" y="410" width="354" height="348"/>
+                                        <rect key="frame" x="0.0" y="395" width="354" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="wh3-zI-bbi"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="selectDateAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="DgV-ue-2Ef"/>
+                                        </connections>
                                     </datePicker>
                                 </subviews>
                                 <constraints>
@@ -154,7 +165,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0dZ-tr-2Yy" secondAttribute="bottom" constant="30" id="3km-Nv-zx6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CbU-7E-8OW" secondAttribute="trailing" id="Den-D0-PeO"/>
                             <constraint firstItem="CbU-7E-8OW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kof-4E-CJy"/>
                             <constraint firstItem="0dZ-tr-2Yy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Ntx-wf-PVr"/>
@@ -165,6 +175,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="departureDateButton" destination="AZy-7y-WTr" id="tzn-wN-m0c"/>
+                        <outlet property="returnDateButton" destination="0oq-nF-Pzb" id="m0u-ZG-s9p"/>
+                        <outlet property="returnDateLabel" destination="t4L-qp-KEM" id="Db7-QG-qbG"/>
+                        <outlet property="selectDatePicker" destination="JN2-Z8-zdx" id="5Kh-Qd-y55"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

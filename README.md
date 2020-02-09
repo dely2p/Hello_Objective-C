@@ -376,3 +376,10 @@ Let's study Objective-C
 	- viewDidDisappear() : view가 활성화에서 비활성화가 될 때 화면이 없어진 후에 호출됨.
 		
 		<img src = "./img/appLifeCycle.gif" width="80%">
+		
+		
+> Project MiniBrowser
+
+- WebKit 사용하여 웹브라우저 띄우기 (goback(), goForward(), stopLoading(), reload() 사용)
+
+	<img src = "./img/miniBrowser.gif" width="30%">

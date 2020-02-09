@@ -389,3 +389,10 @@ Let's study Objective-C
 - Switch, DatePicker를 사용하여 날짜 데이터 출력
  
 	<img src = "./img/flightBooking.gif" width="30%">
+	
+> Project SelectCar
+
+- UIPickerView : data source(컴포넌트의 갯수, 인덱스를 알려주는 역할)와 delegate(데이터 값을 넣어주는 역할)로 코드 안에서 만들 수 있음
+- 필수 메소드
+	- numberOfComponentsInPickerView() : 컴포넌트의 갯수가 필요할 때 호출됨
+	- pickerView:numberOfInComponent() : 컴포넌트 안에 Row가 몇개가 들어갈지 알려주는 역할의 메소드

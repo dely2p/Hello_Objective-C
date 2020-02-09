@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="2On-rv-8uk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hKY-E5-zwg">
+                                <rect key="frame" x="20" y="440" width="374" height="322"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-jq-cMy">
+                                <rect key="frame" x="0.0" y="174" width="414" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gtZ-0W-G5k"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CAB-0i-E0q"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hot-jq-cMy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0fL-nb-81j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hKY-E5-zwg" secondAttribute="bottom" constant="100" id="5cQ-qH-faX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hKY-E5-zwg" secondAttribute="trailing" constant="20" id="Ig1-p1-3dB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2On-rv-8uk" secondAttribute="trailing" id="Wks-0Z-rjO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2On-rv-8uk" secondAttribute="bottom" id="bWP-MZ-a5U"/>
+                            <constraint firstItem="2On-rv-8uk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="keK-aF-Kec"/>
+                            <constraint firstItem="2On-rv-8uk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kln-9k-KqR"/>
+                            <constraint firstItem="Hot-jq-cMy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mh2-3h-jE9"/>
+                            <constraint firstItem="hKY-E5-zwg" firstAttribute="top" secondItem="Hot-jq-cMy" secondAttribute="bottom" constant="50" id="oTD-sY-JI0"/>
+                            <constraint firstItem="Hot-jq-cMy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="p9K-nd-SWB"/>
+                            <constraint firstItem="hKY-E5-zwg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uKa-It-WXa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="hKY-E5-zwg" id="IY8-lk-EzX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.jpeg" width="3264" height="2448"/>
+    </resources>
+</document>

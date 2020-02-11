@@ -397,3 +397,5 @@ Let's study Objective-C
 	- numberOfComponentsInPickerView() : 컴포넌트의 갯수가 필요할 때 호출됨
 	- pickerView:numberOfInComponent() : 컴포넌트 안에 Row가 몇개가 들어갈지 알려주는 역할의 메소드
 	- pickerView:titleForRow:forComponent() : 컴포넌트에 데이터 채우는 메소드
+
+	<img src = "./img/selectCar.gif" width="30%">

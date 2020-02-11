@@ -10,7 +10,16 @@
 
 @interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate> {
     NSArray *companyName;
+    
+    NSArray *carModel;
+    NSArray *carModelImage;
+    
     NSArray *tesla;
+    NSArray *teslaImageNames;
+    NSArray *lamborghini;
+    NSArray *lamborghiniImageNames;
+    NSArray *porsche;
+    NSArray *porscheImageNames;
 }
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
